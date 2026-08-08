@@ -1,0 +1,22 @@
+# 数据集
+data/
+dataset/
+datasets/
+
+# 训练后的模型
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# TensorBoard 和运行结果
+runs/
+outputs/
+logs/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# VS Code 本机配置
+.vscode/
