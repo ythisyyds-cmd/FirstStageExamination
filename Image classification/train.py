@@ -70,7 +70,7 @@ optimizer = optim.SGD(params=model.parameters(),
                       weight_decay=0.0005)
 
 
-epochs = 10                                          #先训练10轮观察一下
+epochs = 20                                          #训练20轮
 
 
 #正式开始训练网络
@@ -116,3 +116,8 @@ with torch.no_grad():
 
 accuracy = correct_num / total_num * 100
 print(f"测试集准确率：{accuracy:.2f}%")
+
+
+#保存训练好的网络参数
+torch.save(model.state_dict(), "./Image classification/resnet18_cifar10.pth")
+print("模型参数已保存")
